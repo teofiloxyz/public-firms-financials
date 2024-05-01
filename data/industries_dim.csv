@@ -1,0 +1,151 @@
+industry_id,industry_name
+1,Biotechnology: Pharmaceutical Preparations
+2,Major Banks
+3,Real Estate Investment Trusts
+4,Industrial Machinery/Components
+5,Computer Software: Prepackaged Software
+6,Blank Checks
+7,Biotechnology: Biological Products (No Diagnostic Substances)
+8,EDP Services
+9,Medical/Dental Instruments
+10,Finance: Consumer Services
+11,Business Services
+12,Semiconductors
+13,Oil & Gas Production
+14,Major Chemicals
+15,Property-Casualty Insurers
+16,Telecommunications Equipment
+17,Restaurants
+18,Metal Fabrications
+19,Investment Managers
+20,Savings Institutions
+21,Real Estate
+22,Other Consumer Services
+23,Medical Specialities
+24,Industrial Specialties
+25,Computer Software: Programming Data Processing
+26,Auto Parts:O.E.M.
+27,Packaged Foods
+28,Professional Services
+29,Other Specialty Stores
+30,Investment Bankers/Brokers/Service
+31,Electric Utilities: Central
+32,Electrical Products
+33,Hotels/Resorts
+34,Homebuilding
+35,Biotechnology: Electromedical & Electrotherapeutic Apparatus
+36,Diversified Commercial Services
+37,Banks
+38,Clothing/Shoe/Accessory Stores
+39,Medical/Nursing Services
+40,Biotechnology: Laboratory Analytical Instruments
+41,Catalog/Specialty Distribution
+42,Natural Gas Distribution
+43,Specialty Insurers
+44,Military/Government/Technical
+45,Services-Misc. Amusement & Recreation
+46,Apparel
+47,Home Furnishings
+48,Beverages (Production/Distribution)
+49,Power Generation
+50,Advertising
+51,Marine Transportation
+52,Radio And Television Broadcasting And Communications Equipment
+53,Biotechnology: In Vitro & In Vivo Diagnostic Substances
+54,Oilfield Services/Equipment
+55,Steel/Iron Ore
+56, Medicinal Chemicals and Botanical Products 
+57,Transportation Services
+58,Life Insurance
+59,Recreational Games/Products/Toys
+60,Consumer Electronics/Appliances
+61,Auto Manufacturing
+62,Computer peripheral equipment
+63,Air Freight/Delivery Services
+64,Electronic Components
+65,Office Equipment/Supplies/Services
+66,Farming/Seeds/Milling
+67,Finance/Investors Services
+68,Movies/Entertainment
+69,Aerospace
+70,RETAIL: Building Materials
+71,Broadcasting
+72,Package Goods/Cosmetics
+73,Department/Specialty Retail Stores
+74,Construction/Ag Equipment/Trucks
+75,Integrated oil Companies
+76,Trucking Freight/Courier Services
+77,Engineering & Construction
+78,Containers/Packaging
+79,Hospital/Nursing Management
+80,Biotechnology: Commercial Physical & Biological Resarch
+81,Water Supply
+82,Mining & Quarrying of Nonmetallic Minerals (No Fuels)
+83,Retail-Auto Dealers and Gas Stations
+84,Oil Refining/Marketing
+85,Coal Mining
+86,Environmental Services
+87,Precious Metals
+88,Oil/Gas Transmission
+89,Plastic Products
+90,Food Chains
+91,Building Products
+92,Retail: Computer Software & Peripheral Equipment
+93,Agricultural Chemicals
+94,Cable & Other Pay Television Services
+95,Food Distributors
+96,Multi-Sector Companies
+97,Consumer Specialties
+98,Specialty Foods
+99,Computer Manufacturing
+100,Other Pharmaceuticals
+101,Misc Health and Biotechnology Services
+102,Miscellaneous manufacturing industries
+103,Shoe Manufacturing
+104,Railroads
+105,Rental/Leasing Companies
+106,Forest Products
+107,Fluid Controls
+108,Newspapers/Magazines
+109,Metal Mining
+110,Paper
+111,Ordnance And Accessories
+112,Water Sewer Pipeline Comm & Power Line Construction
+113,Pharmaceuticals and Biotechnology
+114,Motor Vehicles
+115,Specialty Chemicals
+116,Finance Companies
+117,Ophthalmic Goods
+118,Auto & Home Supply Stores
+119,Automotive Aftermarket
+120,Computer Communications Equipment
+121,Publishing
+122,Textiles
+123,Misc Corporate Leasing Services
+124,Diversified Financial Services
+125,Building Materials
+126,Building operators
+127,Consumer Electronics/Video Chains
+128,Accident &Health Insurance
+129,Pollution Control Equipment
+130,Meat/Poultry/Fish
+131,Medical Electronics
+132,Paints/Coatings
+133,Durable Goods
+134,Retail-Drug Stores and Proprietary Stores
+135,Books
+136,Commercial Banks
+137,Aluminum
+138,Other Metals and Minerals
+139,Wholesale Distributors
+140,Professional and commerical equipment
+141,Precision Instruments
+142,Managed Health Care
+143,Miscellaneous
+144,Tobacco
+145,Trusts Except Educational Religious and Charitable
+146,Diversified Electronic Products
+147,Electronics Distribution
+148,Assisted Living Services
+149,General Bldg Contractors - Nonresidential Bldgs
+150,Tools/Hardware
