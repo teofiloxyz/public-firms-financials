@@ -1,3 +1,5 @@
+-- Create the dimension and fact database tables
+
 -- Sectors dimension table
 CREATE TABLE sectors_dim (
     sector_id SERIAL PRIMARY KEY,
