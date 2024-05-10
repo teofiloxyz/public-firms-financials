@@ -1,3 +1,4 @@
+-- Get the top 10 biotechnology companies by gross margin as a temporary table
 WITH top_biotech_by_gross_margin AS (
     SELECT
         cd.company_name,
@@ -27,6 +28,7 @@ WITH top_biotech_by_gross_margin AS (
     LIMIT 10
 )
 
+-- Get those 10 companies ordered by lowest price-to-research
 SELECT
     company_name,
     market_cap / research_and_development_expenses AS price_to_research

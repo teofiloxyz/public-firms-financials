@@ -1,9 +1,11 @@
+-- Get the decade ranges as a temporary table
 WITH ipo_decade_ranges AS (
     SELECT 
         GENERATE_SERIES(1920, 2020, 10) AS decade_start,
         GENERATE_SERIES(1929, 2029, 10) AS decade_end
 )
 
+-- Get the average cash flows of companies based on their IPO decade
 SELECT 
     CONCAT(decade_start, 's') AS ipo_decade,
     AVG(COALESCE(csf.net_cash_provided_by_operating_activities,0)) AS operating_cashflow,
@@ -17,7 +19,7 @@ FROM
 RIGHT JOIN 
     ipo_decade_ranges ON cd.ipo_year BETWEEN decade_start AND decade_end
 LEFT JOIN
-    cashflow_statements_fact csf ON csf.company_id = cd.company_id
+    cashflow_statements_fact csf ON cd.company_id = csf.company_id
 WHERE
     cd.ipo_year IS NOT NULL
 GROUP BY 

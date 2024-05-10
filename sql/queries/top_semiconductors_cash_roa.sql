@@ -1,6 +1,7 @@
 SELECT
     cd.company_name,
     csf.net_cash_provided_by_operating_activities / bsf.total_assets AS cash_return_on_assets
+    -- It should be the average of total assets, although there's not enough data
 FROM
     companies_dim cd
 LEFT JOIN
@@ -12,7 +13,7 @@ LEFT JOIN
 WHERE
     id.industry_name = 'Semiconductors'
     AND csf.net_cash_provided_by_operating_activities IS NOT NULL
-    AND bsf.total_assets IS NOT NULL
+    AND bsf.total_assets > 0
 ORDER BY
     cash_return_on_assets DESC
 LIMIT 10;

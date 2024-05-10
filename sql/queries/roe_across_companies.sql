@@ -1,6 +1,7 @@
 SELECT
     cd.company_name,
     cosf.net_income / bsf.total_stockholders_equity AS return_on_equity
+    -- It should be the average of total equity, although there's not enough data
 FROM
     companies_dim cd
 LEFT JOIN

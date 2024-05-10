@@ -6,7 +6,7 @@ SELECT
 FROM
     companies_dim cd
 LEFT JOIN
-    balance_sheets_fact bsf ON bsf.company_id = cd.company_id
+    balance_sheets_fact bsf ON cd.company_id = bsf.company_id
 WHERE
     cd.market_cap > 1e5
     AND bsf.total_stockholders_equity > 1e5
