@@ -40,7 +40,7 @@ Most of the companies are from the health care, finance and consumer discretiona
 ![Sector companies number chart](/images/sector_companies_number.jpg)
 *Bar chart of the number of companies by sector.*
 
-<br> <!-- This creates a line break -->
+<br> <!-- Line break -->
 
 ### What is the market capitalization of each sector?
 We have to gather the sector names and the sum of the market cap of their respective companies.
@@ -70,6 +70,8 @@ When considering market capitalization, there's a notable shift. The technology 
 ![Sector market cap weight chart](/images/sector_market_cap_weight.jpg)
 *Bar chart of the market capitalization of each sector.*
 
+<br> <!-- Line break -->
+
 ### What is the relationship between market cap and total equity?
 For this, we need the companies, their market cap, their total equity (book value) and the exchange they're listed on (bonus). The scatter plot is color-coded by exchange. Doing it by sector, country, or industry didn't yield conclusive insights.
 
@@ -97,6 +99,8 @@ As expected, there is a robust positive correlation between market cap and total
 
 ![Market cap vs total equity chart](/images/market_cap_vs_total_equity.jpg)
 *Scatter plot comparing the market capitalization vs total equity of companies, with a logarithmic scale on both axis.*
+
+<br> <!-- Line break -->
 
 ### What's the distribution of return on equity (ROE) across all firms?
 The ROE ratio is obtained by dividing net income by the average total equity of the company. We need to gather both of those for each company and make the division. It's worth noting that negative total equity is not considered valid for this calculation, unlike negative net income.
@@ -126,6 +130,8 @@ Upon examination, it's evident that the majority of companies exhibit ROE values
 
 ![ROE across companies chart](/images/roe_across_companies.jpg)
 *Histogram of the distribution of return on equity across all companies.*
+
+<br> <!-- Line break -->
 
 ### What's the distribution of the price-to-earnings (P/E) on each sector? 
 Price-to-earnings ratio is the result of division of the share price by the earnings per share of the firm. We need each company and also the respective sector name, along with its P/E ratio.
@@ -157,6 +163,8 @@ The chart suggests that the market is more interested in the technology, telecom
 ![Sectors price-to-earnings chart](/images/sectors_price_to_earnings.jpg)
 *Box plot of the distribution of price-to-earnings ratio across each sector, ordered by third quartiles, with a logarithmic scale on the y-axis.*
 
+<br> <!-- Line break -->
+
 ### What's the relationship between the total equity and return on assets (ROA)?
 The ROA is obtained by dividing the net income by the average total assets of the company. For this, we need the companies, their total equity and their ROA.
 
@@ -186,6 +194,8 @@ The chart reveals that: as companies scale up in equity, ROA tends to become les
 
 ![Total equity vs ROA chart](/images/total_equity_vs_roa.jpg)
 *Scatter plot comparing the total equity vs return on assets of companies, with a logarithmic scale on the x-axis.*
+
+<br> <!-- Line break -->
 
 ### What are the top 10 semiconductor firms by cash return on assets (Cash ROA)?
 The Cash ROA is obtained by dividing operating cash flow by the average total assets of the company. We need to select the companies from the semiconductor industry and their Cash ROA.
@@ -219,6 +229,8 @@ Among these firms, all exhibit impressive Cash ROA metrics. Topping the list is 
 
 ![Top semiconductors Cash ROA chart](/images/top_semiconductors_cash_roa.jpg)
 *Bar chart displaying the top 10 semiconductor companies by cash return on assets.*
+
+<br> <!-- Line break -->
 
 ### What are the average cash flows of firms based on their IPO decade?
 To get this we need to group companies by their IPO decade, and get the average cash flows for each group. Decades with five or less companies are excluded from the analysis.
@@ -263,6 +275,8 @@ The chart reveals a trend where more recent entrants into the market tend to exp
 
 ![Cash flows IPO decade chart](/images/cashflows_ipo_decade.jpg)
 *Line chart of the average cash flows (operating, investing, financing and net) of companies based on their IPO decade.*
+
+<br> <!-- Line break -->
 
 ### Which firms of most illiquid industries have the lowest operating cash flow?
 First, we need to identify the most illiquid industries which, for this analysis, have an average current ratio (current assets divided by current liabilities) below 0.75. Within these industries, we select all of their companies and sort them by the lowest operating cash flow.
@@ -313,6 +327,8 @@ Industries such as entertainment and leasing exhibit significant illiquidity. Am
 
 ![Bottom cash flow illiquid chart](/images/bottom_cashflow_illiquid.jpg)
 *Bar chart of the bottom 10 companies by operating cash flow, from the most illiquid industries.*
+
+<br> <!-- Line break -->
 
 ### Which of the top 10 biotech firms with best gross margin, have the lowest price-to-research (PRR)?
 We start by compiling data on biotechnology companies and their respective gross margins, calculated as total sales minus cost of goods sold (COGS) divided by total sales, while also making sure that they have expenses on research and development (R&D). From this pool, the top 10 companies with the highest gross margins are selected. Finally, we get the PRR of these, by dividing market cap by expenses on R&D, ordering the results by the lowest PRR.
