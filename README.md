@@ -17,6 +17,7 @@ For this we need the sector names along with the count of their respective compa
 
 <details>
     <summary>Click to reveal SQL query</summary>
+
     ```sql
     SELECT
         sd.sector_name,
@@ -38,6 +39,8 @@ Most of the companies are from the health care, finance and consumer discretiona
 
 ![Sector companies number chart](/images/sector_companies_number.jpg)
 *Bar chart of the number of companies by sector.*
+
+
 
 ### What is the market capitalization of each sector?
 We have to gather the sector names and the sum of the market cap of their respective companies.
