@@ -16,31 +16,29 @@ The project aims to provide comprehensive insights through a diverse combination
 For this we need the sector names along with the count of their respective companies.
 
 <details>
-    <summary>Click to reveal SQL query</summary>
+<summary>Click to reveal SQL query</summary>
 
-    ```sql
-    SELECT
-        sd.sector_name,
-        COUNT(cd.company_id) AS num_companies
-    FROM
-        companies_dim cd
-    LEFT JOIN
-        sectors_dim sd ON cd.sector_id = sd.sector_id
-    WHERE
-        sd.sector_name IS NOT NULL
-    GROUP BY
-        sd.sector_name
-    ORDER BY
-        num_companies DESC;
-    ```
+```sql
+SELECT
+    sd.sector_name,
+    COUNT(cd.company_id) AS num_companies
+FROM
+    companies_dim cd
+LEFT JOIN
+    sectors_dim sd ON cd.sector_id = sd.sector_id
+WHERE
+    sd.sector_name IS NOT NULL
+GROUP BY
+    sd.sector_name
+ORDER BY
+    num_companies DESC;
+```
 </details>
 
 Most of the companies are from the health care, finance and consumer discretionary sectors, compared to just a few from the basic materials sector.
 
 ![Sector companies number chart](/images/sector_companies_number.jpg)
 *Bar chart of the number of companies by sector.*
-
-
 
 ### What is the market capitalization of each sector?
 We have to gather the sector names and the sum of the market cap of their respective companies.
