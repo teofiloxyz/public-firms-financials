@@ -391,5 +391,8 @@ Interestingly, despite ranking among the top 10 biotech companies by gross margi
 ![Top biotech gm PRR chart](/images/top_biotech_gm_prr.jpg)
 *Bar chart of the price-to-research from the top 10 biotechnology companies by gross margin.*
 
+## Disclaimer
+The content of this project is provided for **demonstration and educational purposes only**. The information presented here is **not intended** to be financial advice.
+
 ## License
 GNU General Public License v3.0.
