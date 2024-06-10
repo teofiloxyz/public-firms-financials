@@ -1,16 +1,19 @@
 # Public Firms Financials 📈
 
 ## Introduction
-**Public Firms Financials** is a financial data analysis showcase, using mostly PostgreSQL. This project delves into the financials of 4,317 companies listed on the NYSE and NASDAQ exchanges (For detailed information about the dataset, check the [data folder](/data/)).
+**Public Firms Financials** is a financial data analysis showcase, using mostly PostgreSQL. This project delves into the financials of 4,317 companies listed on the NYSE and NASDAQ exchanges. For detailed information about the dataset, check the [data folder](/data/).
+
 
 ## Tools Used
-- **[Edgartools](https://github.com/dgunning/edgartools)** (To collect financial data from the SEC filings)
-- **Pandas** (For compiling the dataset)
-- **PostgreSQL** (For data manipulation & analysis and database management)
-- **Matplotlib and Seaborn** (For creating charts)
+- **[Edgartools](https://github.com/dgunning/edgartools)**: To collect financial data from the SEC filings.
+- **Pandas**: For compiling the dataset.
+- **PostgreSQL**: For database management, data manipulation and data analysis.
+- **Matplotlib and Seaborn**: For creating charts.
+
 
 ## Analysis Overview
 The project aims to provide comprehensive insights through a diverse combination of SQL queries, financial analysis and data visualization techniques. PostgreSQL takes the lead in data manipulation and analysis, while Python is exclusively employed for visualization purposes.
+
 
 ### How many companies are in each sector?
 For this we need the sector names along with the count of their respective companies.
@@ -41,6 +44,7 @@ Most of the companies are from the health care, finance and consumer discretiona
 *Bar chart of the number of companies by sector.*
 
 <br> <!-- Line break -->
+
 
 ### What is the market capitalization of each sector?
 We have to gather the sector names and the sum of the market cap of their respective companies.
@@ -73,6 +77,7 @@ When considering market capitalization, there's a notable shift. The technology 
 
 <br> <!-- Line break -->
 
+
 ### What is the relationship between market cap and total equity?
 For this, we need the companies, their market cap, their total equity (book value) and the exchange they're listed on (bonus). The scatter plot is color-coded by exchange. Doing it by sector, country, or industry didn't yield conclusive insights.
 
@@ -103,6 +108,7 @@ As expected, there is a robust positive correlation between market cap and total
 *Scatter plot comparing the market capitalization vs total equity of companies, with a logarithmic scale on both axis.*
 
 <br> <!-- Line break -->
+
 
 ### What's the distribution of return on equity (ROE) across all firms?
 The ROE ratio is obtained by dividing net income by the average total equity of the company. We need to gather both of those for each company and make the division. It's worth noting that negative total equity is not considered valid for this calculation, unlike negative net income.
@@ -135,6 +141,7 @@ Upon examination, it's evident that the majority of companies exhibit ROE values
 *Histogram of the distribution of return on equity across all companies.*
 
 <br> <!-- Line break -->
+
 
 ### What's the distribution of the price-to-earnings (P/E) on each sector? 
 Price-to-earnings ratio is the result of division of the share price by the earnings per share of the firm. We need each company and also the respective sector name, along with its P/E ratio.
@@ -169,6 +176,7 @@ The chart suggests that the market is more interested in the technology, telecom
 
 <br> <!-- Line break -->
 
+
 ### What's the relationship between the total equity and return on assets (ROA)?
 The ROA is obtained by dividing the net income by the average total assets of the company. For this, we need the companies, their total equity and their ROA.
 
@@ -201,6 +209,7 @@ The chart reveals that: as companies scale up in equity, ROA tends to become les
 *Scatter plot comparing the total equity vs return on assets of companies, with a logarithmic scale on the x-axis.*
 
 <br> <!-- Line break -->
+
 
 ### What are the top 10 semiconductor firms by cash return on assets (Cash ROA)?
 The Cash ROA is obtained by dividing operating cash flow by the average total assets of the company. We need to select the companies from the semiconductor industry and their Cash ROA.
@@ -238,6 +247,7 @@ Among these firms, all exhibit impressive Cash ROA metrics. Topping the list is 
 
 <br> <!-- Line break -->
 
+
 ### What are the average cash flows of firms based on their IPO decade?
 To get this we need to group companies by their IPO decade, and get the average cash flows for each group. Decades with five or less companies are excluded from the analysis.
 
@@ -245,7 +255,7 @@ To get this we need to group companies by their IPO decade, and get the average 
 <summary>Click to reveal SQL query</summary>
 
 ```sql
--- Get the decade ranges as a temporary table
+-- Get the decade ranges as a CTE
 WITH ipo_decade_ranges AS (
     SELECT 
         GENERATE_SERIES(1920, 2020, 10) AS decade_start,
@@ -285,6 +295,7 @@ The chart reveals a trend where more recent entrants into the market tend to exp
 
 <br> <!-- Line break -->
 
+
 ### Which firms of most illiquid industries have the lowest operating cash flow?
 First, we need to identify the most illiquid industries which, for this analysis, have an average current ratio (current assets divided by current liabilities) below 0.75. Within these industries, we select all of their companies and sort them by the lowest operating cash flow.
 
@@ -292,7 +303,7 @@ First, we need to identify the most illiquid industries which, for this analysis
 <summary>Click to reveal SQL query</summary>
 
 ```sql
--- Get the most illiquid industries as a temporary table
+-- Get industries with an average current ratio below 0.75 as a CTE
 WITH most_illiquid_industries AS (
     SELECT
         id.industry_id,
@@ -338,6 +349,7 @@ Industries such as entertainment and leasing exhibit significant illiquidity. Am
 
 <br> <!-- Line break -->
 
+
 ### Which of the top 10 biotech firms with best gross margin, have the lowest price-to-research (PRR)?
 We start by compiling data on biotechnology companies and their respective gross margins, calculated as total sales minus cost of goods sold (COGS) divided by total sales, while also making sure that they have expenses on research and development (R&D). From this pool, the top 10 companies with the highest gross margins are selected. Finally, we get the PRR of these, by dividing market cap by expenses on R&D, ordering the results by the lowest PRR.
 
@@ -345,7 +357,7 @@ We start by compiling data on biotechnology companies and their respective gross
 <summary>Click to reveal SQL query</summary>
 
 ```sql
--- Get the top 10 biotechnology companies by gross margin as a temporary table
+-- Get the top 10 biotechnology companies by gross margin as a CTE
 WITH top_biotech_by_gross_margin AS (
     SELECT
         cd.company_name,
@@ -391,8 +403,10 @@ Interestingly, despite ranking among the top 10 biotech companies by gross margi
 ![Top biotech gm PRR chart](/images/top_biotech_gm_prr.jpg)
 *Bar chart of the price-to-research from the top 10 biotechnology companies by gross margin.*
 
+
 ## Disclaimer
 The content of this project is provided for **demonstration and educational purposes only**. The information presented here is **not intended** to be financial advice.
+
 
 ## License
 GNU General Public License v3.0.
