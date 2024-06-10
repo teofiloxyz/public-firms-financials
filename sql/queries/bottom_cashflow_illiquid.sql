@@ -1,4 +1,4 @@
--- Get the most illiquid industries as a temporary table
+-- Get industries with an average current ratio below 0.75 as a CTE
 WITH most_illiquid_industries AS (
     SELECT
         id.industry_id,

@@ -1,4 +1,4 @@
--- Get the top 10 biotechnology companies by gross margin as a temporary table
+-- Get the top 10 biotechnology companies by gross margin as a CTE
 WITH top_biotech_by_gross_margin AS (
     SELECT
         cd.company_name,

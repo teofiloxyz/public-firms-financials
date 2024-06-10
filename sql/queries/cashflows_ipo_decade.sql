@@ -1,4 +1,4 @@
--- Get the decade ranges as a temporary table
+-- Get the decade ranges as a CTE
 WITH ipo_decade_ranges AS (
     SELECT 
         GENERATE_SERIES(1920, 2020, 10) AS decade_start,
