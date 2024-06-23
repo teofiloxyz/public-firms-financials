@@ -1,7 +1,7 @@
 # Public Firms Financials 📈
 
 ## Introduction
-**Public Firms Financials** is a financial data analysis showcase, using mostly PostgreSQL. This project delves into the financials of 4,317 companies listed on the NYSE and NASDAQ exchanges. For detailed information about the dataset, check the [data folder](/data/).
+**Public Firms Financials** is a financial data analysis showcase, using mostly PostgreSQL. This project delves into the financials of 4,317 companies listed on the NYSE and NASDAQ exchanges.
 
 
 ## Tools Used
@@ -12,7 +12,10 @@
 
 
 ## Analysis Overview
-The project aims to provide comprehensive insights through a diverse combination of SQL queries, financial analysis and data visualization techniques. PostgreSQL takes the lead in data manipulation and analysis, while Python is exclusively employed for visualization purposes.
+The project aims to provide insights through a diverse combination of SQL queries, financial analysis and data visualization techniques. PostgreSQL takes the lead in data manipulation and analysis, while Python is exclusively employed for visualization purposes.
+For detailed information about the dataset, check the [data folder](/data/).
+
+<br> <!-- Line break -->
 
 
 ### How many companies are in each sector?
