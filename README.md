@@ -41,10 +41,10 @@ ORDER BY
 ```
 </details>
 
-Most of the companies are from the health care, finance and consumer discretionary sectors, compared to just a few from the basic materials sector.
-
 ![Sector companies number chart](/images/sector_companies_number.png)
 *Bar chart of the number of companies by sector.*
+
+Most of the companies are from the health care, finance and consumer discretionary sectors, compared to just a few from the basic materials sector.
 
 <br> <!-- Line break -->
 
@@ -73,10 +73,10 @@ ORDER BY
 ```
 </details>
 
-When considering market capitalization, there's a notable shift. The technology sector emerges as the largest.
-
 ![Sector market cap weight chart](/images/sector_market_cap_weight.png)
-*Bar chart of the market capitalization of each sector.*
+*Bar chart of the market capitalization of each sector in trillions of dollars.*
+
+When considering market capitalization, there's a notable shift. The technology sector emerges as the largest.
 
 <br> <!-- Line break -->
 
@@ -105,10 +105,10 @@ ORDER BY
 ```
 </details>
 
-As expected, there is a robust positive correlation between market cap and total equity. Companies listed on NYSE tend to dominate the large-cap spectrum, while NASDAQ hosts most of the smaller caps. Judging solely on the comparison of market cap with total equity, NASDAQ-listed companies, especially smaller caps, appear relatively more overvalued compared to the firms listed on NYSE.
-
 ![Market cap vs total equity chart](/images/market_cap_vs_total_equity.png)
 *Scatter plot comparing the market capitalization vs total equity of companies, with a logarithmic scale on both axis.*
+
+As expected, there is a robust positive correlation between market cap and total equity. Companies listed on NYSE tend to dominate the large-cap spectrum, while NASDAQ hosts most of the smaller caps. Judging solely on the comparison of market cap with total equity, NASDAQ-listed companies, especially smaller caps, appear relatively more overvalued compared to the firms listed on NYSE.
 
 <br> <!-- Line break -->
 
@@ -138,10 +138,10 @@ ORDER BY
 ```
 </details>
 
-Upon examination, it's evident that the majority of companies exhibit ROE values falling within the range of 0 to 0.5. However, a substantial portion of companies displays negative ROE, due to negative net income.
-
 ![ROE across companies chart](/images/roe_across_companies.png)
-*Histogram of the distribution of return on equity across all companies.*
+*Histogram of the distribution of return on equity of companies.*
+
+Upon examination, it's evident that the majority of companies exhibit ROE values falling within the range of 0 to 0.5. However, a substantial portion of companies displays negative ROE, due to negative net income.
 
 <br> <!-- Line break -->
 
@@ -172,10 +172,10 @@ ORDER BY
 ```
 </details>
 
-The chart suggests that the market is more interested in the technology, telecommunications, health care, and real estate sectors, while energy and finance stocks appear to get less attention from investors.
-
 ![Sectors price-to-earnings chart](/images/sectors_price_to_earnings.png)
-*Box plot of the distribution of price-to-earnings ratio across each sector, ordered by third quartiles, with a logarithmic scale on the y-axis.*
+*Box plot of the distribution of price-to-earnings ratio across all sectors, ordered by third quartiles, with a logarithmic scale on the x-axis.*
+
+The chart suggests that the market is more interested in the technology, telecommunications, health care, and real estate sectors, while energy and finance stocks appear to get less attention from investors.
 
 <br> <!-- Line break -->
 
@@ -206,10 +206,10 @@ ORDER BY
 ```
 </details>
 
-The chart reveals that: as companies scale up in equity, ROA tends to become less negative. This pattern becomes particularly evident as companies surpass the $1 billion in equity mark, suggesting improved efficiency, possibly due to better management.
-
 ![Total equity vs ROA chart](/images/total_equity_vs_roa.png)
 *Scatter plot comparing the total equity vs return on assets of companies, with a logarithmic scale on the x-axis.*
+
+The chart reveals that: as companies scale up in equity, ROA tends to become less negative. This pattern becomes particularly evident as companies surpass the $1 billion in equity mark, suggesting improved efficiency, possibly due to better management.
 
 <br> <!-- Line break -->
 
@@ -243,10 +243,10 @@ LIMIT 10;
 ```
 </details>
 
-Among these firms, all exhibit impressive Cash ROA metrics. Topping the list is "Nvidia", showcasing exceptional efficiency compared to its counterparts. "Lattice Semiconductor" follows behind by about 10 percentage points, also demonstrating very strong performance in this metric.
-
 ![Top semiconductors Cash ROA chart](/images/top_semiconductors_cash_roa.png)
 *Bar chart displaying the top 10 semiconductor companies by cash return on assets.*
+
+Among these firms, all exhibit impressive Cash ROA metrics. Topping the list is "Nvidia", showcasing exceptional efficiency compared to its counterparts. "Lattice Semiconductor" follows behind by about 10 percentage points, also demonstrating very strong performance in this metric.
 
 <br> <!-- Line break -->
 
@@ -291,10 +291,10 @@ ORDER BY
 ```
 </details>
 
-The chart reveals a trend where more recent entrants into the market tend to experience a lower operating cash flow, accompanied by higher investing and financing cash flows, resulting in a lower net cash flow. Unsurprisingly, older companies show a superior average of net cash flow compared to newer entrants.
-
 ![Cash flows IPO decade chart](/images/cashflows_ipo_decade.png)
 *Line chart of the average cash flows (operating, investing, financing and net) of companies based on their IPO decade.*
+
+The chart reveals a trend where more recent entrants into the market tend to experience a lower operating cash flow, accompanied by higher investing and financing cash flows, resulting in a lower net cash flow. Unsurprisingly, older companies show a superior average of net cash flow compared to newer entrants.
 
 <br> <!-- Line break -->
 
@@ -345,10 +345,10 @@ LIMIT 10;
 ```
 </details>
 
-Industries such as entertainment and leasing exhibit significant illiquidity. Among these industries, "AMC Entertainment" emerges as the leader with the poorest operating cash flow, closely followed by "fuboTV".
-
 ![Bottom cash flow illiquid chart](/images/bottom_cashflow_illiquid.png)
 *Bar chart of the bottom 10 companies by operating cash flow, from the most illiquid industries.*
+
+Industries such as entertainment and leasing exhibit significant illiquidity. Among these industries, "AMC Entertainment" emerges as the leader with the poorest operating cash flow, closely followed by "fuboTV".
 
 <br> <!-- Line break -->
 
@@ -401,10 +401,10 @@ ORDER BY
 ```
 </details>
 
-Interestingly, despite ranking among the top 10 biotech companies by gross margin, "Clearside Biomedical" and "Deciphera Pharmaceuticals" appear to attract relatively low market interest for their level of R&D expenses.
-
 ![Top biotech gm PRR chart](/images/top_biotech_gm_prr.png)
 *Bar chart of the price-to-research from the top 10 biotechnology companies by gross margin.*
+
+Interestingly, despite ranking among the top 10 biotech companies by gross margin, "Clearside Biomedical" and "Deciphera Pharmaceuticals" appear to attract relatively low market interest for their level of R&D expenses.
 
 
 ## Disclaimer
