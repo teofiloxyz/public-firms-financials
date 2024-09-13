@@ -8,7 +8,7 @@ FROM
 LEFT JOIN
     balance_sheets_fact bsf ON cd.company_id = bsf.company_id
 WHERE
-    cd.market_cap > 1e5
-    AND bsf.total_stockholders_equity > 1e5
+    cd.market_cap > 1e6
+    AND bsf.total_stockholders_equity > 1e6
 ORDER BY
     cd.market_cap DESC;

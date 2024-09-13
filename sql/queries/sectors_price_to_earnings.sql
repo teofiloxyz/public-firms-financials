@@ -11,6 +11,6 @@ LEFT JOIN
     consolidated_operations_statements_fact cosf ON cd.company_id = cosf.company_id
 WHERE
     sd.sector_name IS NOT NULL
-    AND cd.market_cap / cosf.net_income BETWEEN 1e-4 AND 1e4
+    AND cd.market_cap / cosf.net_income BETWEEN 1e-1 AND 1e3
 ORDER BY
     price_to_earnings DESC;

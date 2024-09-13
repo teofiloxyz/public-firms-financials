@@ -10,6 +10,6 @@ LEFT JOIN
     balance_sheets_fact bsf ON cd.company_id = bsf.company_id
 WHERE
     bsf.total_stockholders_equity > 0
-    AND cosf.net_income / bsf.total_stockholders_equity BETWEEN -2 AND 2
+    AND cosf.net_income / bsf.total_stockholders_equity BETWEEN -2 AND 1
 ORDER BY
     return_on_equity DESC;

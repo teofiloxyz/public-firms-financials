@@ -1,3 +1,4 @@
 data/.raw_data.tar.xz
+.ipynb_checkpoints/
 create_charts.ipynb
 .TODO.md

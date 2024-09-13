@@ -98,8 +98,8 @@ FROM
 LEFT JOIN
     balance_sheets_fact bsf ON cd.company_id = bsf.company_id
 WHERE
-    cd.market_cap > 1e5
-    AND bsf.total_stockholders_equity > 1e5
+    cd.market_cap > 1e6
+    AND bsf.total_stockholders_equity > 1e6
 ORDER BY
     cd.market_cap DESC;
 ```
@@ -132,7 +132,7 @@ LEFT JOIN
     balance_sheets_fact bsf ON cd.company_id = bsf.company_id
 WHERE
     bsf.total_stockholders_equity > 0
-    AND cosf.net_income / bsf.total_stockholders_equity BETWEEN -2 AND 2
+    AND cosf.net_income / bsf.total_stockholders_equity BETWEEN -2 AND 1
 ORDER BY
     return_on_equity DESC;
 ```
@@ -166,7 +166,7 @@ LEFT JOIN
     consolidated_operations_statements_fact cosf ON cd.company_id = cosf.company_id
 WHERE
     sd.sector_name IS NOT NULL
-    AND cd.market_cap / cosf.net_income BETWEEN 1e-4 AND 1e4
+    AND cd.market_cap / cosf.net_income BETWEEN 1e-1 AND 1e3
 ORDER BY
     price_to_earnings DESC;
 ```
